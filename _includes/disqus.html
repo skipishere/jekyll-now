@@ -16,10 +16,11 @@
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 <script>
-    var test = '{{site.url}}{{ page.url }}';
+    var test = '{{ page.url | absolute_url }}';
     var foo = '{{ page.title }}';
     var foo2 = '{{ page.id }}';
     var foo3 = '{{ page.path }}';
+    var foo6 = '{{ page.path | remove_first: "_posts" | remove_first: ".md" }}';
     var foo4 = '{{ page.date }}';
 
 </script>
