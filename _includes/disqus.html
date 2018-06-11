@@ -16,8 +16,11 @@
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 <script>
-    var test = '{{ page.url }}';
+    var test = '{{site.url}}{{ page.url }}';
     var foo = '{{ page.title }}';
+    var foo2 = '{{ page.id }}';
+    var foo2 = 'http://test{{ page.id }}.foo';
+
 </script>
 
 {% endif %}
