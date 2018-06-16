@@ -10,24 +10,24 @@
 <meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
 {% endif %}
 
-    {% if page.excerpt %}
+{% if page.excerpt %}
 <meta name="description" content="{{ page.excerpt| strip_html }}" />
 <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
 <meta name="twitter:description" content="{{ page.excerpt| strip_html }}">
-    {% else %}
+{% else %}
 <meta name="description" content="{{ site.description }}">
 <meta property="og:description" content="{{ site.description }}" />
 <meta name="twitter:description" content="{{ site.description }}">
-    {% endif %}
+{% endif %}
 <meta name="author" content="{{ site.name }}" />
 
-    {% if page.title %}
+{% if page.title %}
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+{% endif %}
 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 
-<meta name="twitter:image" content="https://www.stephenj.co.uk/Content/images/Sunset.webp">
-<meta property="og:image" content="https://www.stephenj.co.uk/Content/images/Sunset.webp">
+<meta name="twitter:image" content="{{ site.baseurl }}/images/{{ page.image | default: "profile" }}.webp">
+<meta property="og:image" content="{{ site.baseurl }}/images/{{ page.image | default: "profile" }}.webp">

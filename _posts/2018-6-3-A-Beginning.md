@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Beginning!
+image: Sunset
 ---
 
 It's something I've been meaning to do for ages, but finally got around to it, blogging!
