@@ -29,5 +29,5 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 
-<meta name="twitter:image" content="{{ site.baseurl }}/images/{{ page.image | default: "profile" }}.webp">
-<meta property="og:image" content="{{ site.baseurl }}/images/{{ page.image | default: "profile" }}.webp">
+<meta name="twitter:image" content="{{  "/images/" | absolute_url }}{{ page.image | default: "profile" }}.webp">
+<meta property="og:image" content="{{ "/images/" | absolute_url }}{{ page.image | default: "profile" }}.webp">
