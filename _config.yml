@@ -49,6 +49,10 @@ url: https://blog.stephenj.co.uk
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+webrick:
+  headers:
+    Content-Security-Policy-Report-Only: default-src 'self'; img-src 'self' https://avatars3.githubusercontent.com; frame-src https://disqus.com/; script-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://disqus.com https://c.disquscdn.com https://{{ site.disqus }}.disqus.com report-uri https://7759e86b05daeeced19f70967b7ed994.report-uri.com/r/d/csp/reportOnly
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
